@@ -339,6 +339,11 @@ a {
   line-height: 1.8;
 }
 
+.contact-list .contact-address strong {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
 .contact-section {
   padding-bottom: 5.5rem;
 }

@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -96,9 +96,31 @@ def main() -> None:
         )
         rr.italic = italic
 
+    def footer_multiline(lines: list[str], *, italic: bool = False) -> None:
+        p = footer.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(2)
+        p.paragraph_format.space_after = Pt(0)
+        color = (
+            RGBColor(0x42, 0x6B, 0x96)
+            if not italic
+            else RGBColor(0x81, 0x9F, 0x96)
+        )
+        for i, line in enumerate(lines):
+            if i:
+                p.add_run().add_break(WD_BREAK.LINE)
+            rr = p.add_run(line)
+            rr.font.size = Pt(9)
+            rr.font.color.rgb = color
+            rr.italic = italic
+
     footer_line("info@pneumahealth.ca  ·  pneumahealth.ca")
-    footer_line(
-        "3230 Yonge Street #4092, Toronto, ON M4N 3P6, Canada",
+    footer_multiline(
+        [
+            "3230 Yonge Street #4092",
+            "Toronto, ON M4N 3P6",
+            "Canada",
+        ],
         italic=True,
     )
     footer_line(
