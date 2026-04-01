@@ -341,14 +341,8 @@ a {
 
 .contact-list .contact-address strong,
 .contact-list .contact-hours strong {
-  display: block;
-  margin-bottom: 0.15rem;
-}
-
-.contact-list .contact-stacked-lines {
-  margin-top: 0.1rem;
-  padding-left: 0.85rem;
-  line-height: 1.75;
+  display: inline-block;
+  margin-bottom: 0.2rem;
 }
 
 .contact-section {

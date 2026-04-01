@@ -96,19 +96,11 @@ def main() -> None:
         )
         rr.italic = italic
 
-    def footer_multiline(
-        lines: list[str],
-        *,
-        italic: bool = False,
-        inset_pt: int = 0,
-    ) -> None:
+    def footer_multiline(lines: list[str], *, italic: bool = False) -> None:
         p = footer.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_before = Pt(2)
         p.paragraph_format.space_after = Pt(0)
-        if inset_pt:
-            p.paragraph_format.left_indent = Pt(inset_pt)
-            p.paragraph_format.right_indent = Pt(inset_pt)
         color = (
             RGBColor(0x42, 0x6B, 0x96)
             if not italic
@@ -131,7 +123,6 @@ def main() -> None:
             "Canada",
         ],
         italic=True,
-        inset_pt=11,
     )
     footer_multiline(
         [
@@ -139,7 +130,6 @@ def main() -> None:
             "Saturday 10am–2pm",
         ],
         italic=True,
-        inset_pt=11,
     )
     footer.paragraphs[0].paragraph_format.space_before = Pt(6)
 
