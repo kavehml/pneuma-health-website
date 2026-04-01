@@ -1,0 +1,5 @@
+Restore the pre-blue theme by copying these files over the originals:
+
+  cp backup-pre-blue-theme-2026-04-01/styles.css .
+  cp backup-pre-blue-theme-2026-04-01/index.html .
+  cp backup-pre-blue-theme-2026-04-01/assets/therapy-room-photo.png assets/
