@@ -124,8 +124,11 @@ def main() -> None:
         ],
         italic=True,
     )
-    footer_line(
-        "Hours: Mon–Fri 10am–4pm  ·  Sat 10am–2pm",
+    footer_multiline(
+        [
+            "Hours: Mon–Fri 10am–4pm",
+            "Saturday 10am–2pm",
+        ],
         italic=True,
     )
     footer.paragraphs[0].paragraph_format.space_before = Pt(6)
