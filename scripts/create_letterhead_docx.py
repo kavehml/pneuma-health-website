@@ -114,7 +114,8 @@ def main() -> None:
             rr.font.color.rgb = color
             rr.italic = italic
 
-    footer_line("info@pneumahealth.ca  ·  pneumahealth.ca")
+    footer_line("(647) 547 2323  ·  info@pneumahealth.ca")
+    footer_line("pneumahealth.ca")
     footer_multiline(
         [
             "3230 Yonge Street #4092",
