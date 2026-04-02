@@ -297,6 +297,11 @@ a {
   );
 }
 
+.booking-flow-section--lead {
+  padding-top: 1.25rem;
+  scroll-margin-top: 5rem;
+}
+
 .booking-flow-intro {
   text-align: center;
   margin-left: auto;
