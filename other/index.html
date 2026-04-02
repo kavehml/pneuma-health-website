@@ -15,14 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="../assets/favicon.png" />
-    <link rel="stylesheet" href="other.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/other/other.css" />
   </head>
   <body class="other-page">
     <header class="other-header">
       <div class="other-container other-nav">
-        <a class="other-brand" href="../index.html" aria-label="Pneuma Health main site">
-          <img src="../assets/logo-pneuma.png" alt="Pneuma Health" width="200" height="52" />
+        <a class="other-brand" href="/" aria-label="Pneuma Health main site">
+          <img src="/assets/logo-pneuma.png" alt="Pneuma Health" width="200" height="52" />
         </a>
         <nav class="other-nav-links" aria-label="On this page">
           <a href="#how-it-works">How it works</a>
@@ -32,26 +32,13 @@
           <a href="#community">Community fund</a>
           <a href="#contact-other">Contact</a>
         </nav>
-        <span class="other-back"><a href="../index.html">Main site</a></span>
+        <span class="other-back"><a href="/">Main site</a></span>
       </div>
     </header>
 
     <main>
-      <section class="other-hero other-container">
-        <p class="eyebrow">Compassion · Access · Dignity</p>
-        <h1>Therapy should be within reach for every person who needs it.</h1>
-        <p class="lead">
-          Mental health care is essential—not a luxury. This program is built on the belief that
-          everyone deserves skilled, respectful support, regardless of income. We offer
-          straightforward, affordable sessions and ways to pay kindness forward when you are able.
-        </p>
-        <p class="other-price-pill" aria-label="Standard session rate">
-          $99 <span>per 60-minute session</span>
-        </p>
-      </section>
-
       <section
-        class="other-section other-booking-section other-container"
+        class="other-section other-booking-section other-container other-booking-section--top"
         id="how-it-works"
         aria-labelledby="other-booking-heading"
       >
@@ -62,10 +49,11 @@
         </p>
         <figure class="other-booking-diagram">
           <img
-            src="../assets/booking-flow-cartoon.png"
+            src="/assets/booking-flow-cartoon.png"
             width="1376"
             height="768"
             alt="Cartoon diagram in three steps: choose a therapist, choose your package, get connected with your therapist."
+            fetchpriority="high"
             decoding="async"
           />
         </figure>
@@ -83,6 +71,19 @@
             <span>We introduce you to your therapist and set up your first session, online or in person.</span>
           </li>
         </ol>
+      </section>
+
+      <section class="other-hero other-container">
+        <p class="eyebrow">Compassion · Access · Dignity</p>
+        <h1>Therapy should be within reach for every person who needs it.</h1>
+        <p class="lead">
+          Mental health care is essential—not a luxury. This program is built on the belief that
+          everyone deserves skilled, respectful support, regardless of income. We offer
+          straightforward, affordable sessions and ways to pay kindness forward when you are able.
+        </p>
+        <p class="other-price-pill" aria-label="Standard session rate">
+          $99 <span>per 60-minute session</span>
+        </p>
       </section>
 
       <section class="other-section other-container" id="therapists">
@@ -390,7 +391,7 @@
           <br />
           Pneuma Health · 3230 Yonge Street #4092, Toronto, ON M4N 3P6, Canada
         </p>
-        <a class="btn btn-secondary" href="../index.html">Return to main website</a>
+        <a class="btn btn-secondary" href="/">Return to main website</a>
       </section>
     </main>
 
@@ -405,6 +406,6 @@
       </p>
     </footer>
 
-    <script src="other.js" defer></script>
+    <script src="/other/other.js" defer></script>
   </body>
 </html>

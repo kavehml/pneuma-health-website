@@ -424,6 +424,11 @@ body.other-page {
   );
 }
 
+.other-booking-section--top {
+  padding-top: 0.5rem;
+  scroll-margin-top: 5rem;
+}
+
 .other-booking-section h2 {
   max-width: 22ch;
   margin-left: auto;
