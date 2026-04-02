@@ -417,16 +417,12 @@ body.other-page {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
+  scroll-margin-top: 5rem;
   background: linear-gradient(
     180deg,
     rgba(205, 225, 235, 0.4) 0%,
     transparent 70%
   );
-}
-
-.other-booking-section--top {
-  padding-top: 0.5rem;
-  scroll-margin-top: 5rem;
 }
 
 .other-booking-section h2 {
