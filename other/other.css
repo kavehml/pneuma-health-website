@@ -457,9 +457,9 @@ body.other-page {
   margin: 1.75rem auto 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  max-width: 1000px;
+  max-width: 900px;
   text-align: left;
 }
 
@@ -505,12 +505,6 @@ body.other-page {
   margin-top: 0.75rem;
   font-size: 0.8rem;
   opacity: 0.9;
-}
-
-@media (max-width: 900px) {
-  .other-booking-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 640px) {
