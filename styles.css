@@ -287,6 +287,73 @@ a {
   padding: 4.5rem 0;
 }
 
+.booking-flow-section {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(205, 225, 235, 0.35) 0%,
+    transparent 55%
+  );
+}
+
+.booking-flow-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.booking-flow-diagram {
+  margin: 0 auto;
+  max-width: min(100%, 920px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  line-height: 0;
+}
+
+.booking-flow-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.booking-steps {
+  list-style: none;
+  margin: 2rem auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+}
+
+.booking-steps li {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  box-shadow: var(--shadow-soft);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.booking-steps strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+  color: var(--color-primary-deep);
+}
+
+.booking-steps span {
+  display: block;
+}
+
 .narrow {
   max-width: 760px;
 }
@@ -407,6 +474,10 @@ a {
   .values-panel {
     grid-template-columns: 1fr;
   }
+
+  .booking-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -442,6 +513,10 @@ a {
 
   .section {
     padding: 3.5rem 0;
+  }
+
+  .booking-steps {
+    grid-template-columns: 1fr;
   }
 
 }
