@@ -3,244 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pneuma Health</title>
+    <title>Pneuma Health | Healthcare software, care access, and operations</title>
     <meta
       name="description"
-      content="Compassionate mental health care for individuals, couples, and families."
+      content="Pneuma Health builds clinic operations software, mental health access pathways, and management systems for modern care teams."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-shell">
-        <a class="brand" href="#home" aria-label="Pneuma Health home">
-          <img class="brand-logo" src="assets/logo-pneuma.png" alt="Pneuma Health" />
+        <a class="brand" href="/" aria-label="Pneuma Health home">
+          <span class="brand-symbol" aria-hidden="true"></span>
+          <span>Pneuma Health</span>
         </a>
 
         <nav class="site-nav" aria-label="Primary">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a href="/solutions/">Solutions</a>
+          <a href="/health/">Health</a>
+          <a href="/management/">Management</a>
+          <a href="/contact/">Contact</a>
+          <a class="nav-cta" href="https://app.pneumahealth.ca">Staff app</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero-section" id="home">
-        <div class="container hero-grid">
+      <section class="hero-section">
+        <div class="container hero-layout">
           <div class="hero-copy">
-            <p class="eyebrow">Warm, evidence-based mental health care</p>
-            <h1>Compassionate Mental Health Care for Individuals, Couples, and Families</h1>
+            <p class="eyebrow">Pneuma Health platform</p>
+            <h1>Healthcare operations, therapy access, and management systems under one roof.</h1>
             <p class="hero-text">
-              At Pneuma Health, we provide a safe, welcoming, and confidential
-              space to support your journey toward mental wellness and healing. Our
-              dedicated team offers personalized, evidence-based therapy tailored to
-              your unique needs.
+              Pneuma Health is becoming the parent home for the software, care access, and
+              management work behind modern mental health operations. Client-facing therapy content
+              now lives separately at My Safe Zone, while this site carries the larger platform.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Contact Us</a>
+              <a class="button primary" href="/solutions/">Explore solutions</a>
+              <a class="button secondary" href="https://app.pneumahealth.ca">Open staff app</a>
             </div>
+            <ul class="hero-signals" aria-label="Key Pneuma Health areas">
+              <li>Clinic operations software</li>
+              <li>Care access pathways</li>
+              <li>Practice management systems</li>
+            </ul>
           </div>
 
-          <div class="hero-visual">
-            <div class="hero-image-card">
-              <img
-                src="assets/therapy-room-hero-blue-theme.png"
-                alt="Therapist in a bright, welcoming office with a calm ocean view through the window"
-              />
-            </div>
-          </div>
+          <figure class="hero-media">
+            <img
+              src="/assets/clinic-ops-sign-in.png"
+              alt="Staff sign-in screen for the Pneuma Health Clinic Operations Hub"
+            />
+            <figcaption>
+              <span>Clinic Operations Hub</span>
+              <strong>Staff workflows, task tracking, intake visibility, and operational evidence.</strong>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section intro-section">
-        <div class="container section-heading narrow">
-          <p class="section-label">Care That Meets You Where You Are</p>
-          <h2>Support that feels personal, respectful, and accessible.</h2>
-          <p>
-            Our approach is grounded in clinical excellence and shaped by compassion,
-            cultural awareness, and genuine connection. We support clients across a
-            wide range of concerns and create care plans that reflect each person's
-            goals, identity, and lived experience.
+      <section class="section surface-section" aria-labelledby="platform-heading">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">What Pneuma Health contains</p>
+            <h2 id="platform-heading">A focused operating layer for care teams.</h2>
+          </div>
+          <p class="section-intro">
+            The new site separates the company from the therapy brand. Pneuma Health now points
+            people to the right system: software for staff, care access for clients, and management
+            structure for the organization.
           </p>
         </div>
-      </section>
 
-      <section class="section feature-section">
-        <div class="container feature-grid">
-          <article class="card">
-            <h3>Individualized Support</h3>
+        <div class="container area-grid">
+          <article class="area-card accent-cyan">
+            <p class="card-label">Solutions</p>
+            <h3>Clinic Operations Hub</h3>
             <p>
-              Therapy is never one-size-fits-all. We tailor treatment to your
-              concerns, strengths, and pace.
+              Staff-facing management software for intake, tasks, contacts, forms, internal
+              coordination, and day-to-day visibility.
             </p>
+            <a href="/solutions/" aria-label="View Pneuma Health solutions">View solutions</a>
           </article>
-          <article class="card">
-            <h3>Inclusive and Respectful Care</h3>
+
+          <article class="area-card accent-green">
+            <p class="card-label">Health</p>
+            <h3>Therapy access through My Safe Zone</h3>
             <p>
-              We welcome clients from diverse backgrounds and strive to offer a
-              space where you feel heard, understood, and supported.
+              A dedicated client-facing therapy website for individuals, couples, families, and
+              affordable access programs.
             </p>
+            <a href="/health/" aria-label="View Pneuma Health health access">View health</a>
           </article>
-          <article class="card">
-            <h3>Virtual and In-Person Options</h3>
+
+          <article class="area-card accent-amber">
+            <p class="card-label">Management</p>
+            <h3>Systems for sustainable operations</h3>
             <p>
-              We make it easier to access care with flexible therapy options
-              designed to fit your schedule and comfort.
+              Practical operating structure for scheduling, people, documentation, finance,
+              marketing, and evidence capture.
             </p>
+            <a href="/management/" aria-label="View Pneuma Health management">View management</a>
           </article>
         </div>
       </section>
 
-      <section class="section about-section" id="about">
-        <div class="container split-layout">
-          <div class="split-copy">
-            <p class="section-label">About Pneuma Health</p>
-            <h2>A welcoming place to begin your healing journey.</h2>
-            <p>
-              Pneuma Health was created to offer mental health care that is
-              compassionate, clinically informed, and responsive to the real needs
-              of the people we serve. We understand that reaching out for support
-              can feel vulnerable, and we aim to make that first step feel clear,
-              respectful, and welcoming.
-            </p>
-            <p>
-              We believe meaningful therapy begins with trust. Our clinicians work
-              collaboratively with clients to understand their concerns, identify
-              goals, and create a path forward that feels realistic and supportive.
-            </p>
-          </div>
-          <div class="values-panel">
-            <article>
-              <h3>Compassion</h3>
-              <p>We meet each person with empathy, warmth, and care.</p>
-            </article>
-            <article>
-              <h3>Respect</h3>
-              <p>We honor each client's background, identity, beliefs, and pace.</p>
-            </article>
-            <article>
-              <h3>Collaboration</h3>
-              <p>We work with clients, not on them, building treatment around shared goals.</p>
-            </article>
-            <article>
-              <h3>Growth</h3>
-              <p>We support lasting change through insight, skill-building, and practical strategies.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section services-section" id="services">
-        <div class="container">
+      <section class="section" aria-labelledby="model-heading">
+        <div class="container split-section">
           <div class="section-heading">
-            <p class="section-label">Our Services</p>
-            <h2>Therapy designed to support emotional wellness and meaningful change.</h2>
-            <p>
-              We offer therapy and mental health support for a range of personal,
-              relational, and emotional challenges.
-            </p>
+            <p class="eyebrow">Operating model</p>
+            <h2 id="model-heading">Built around the work clinics actually repeat.</h2>
           </div>
-
-          <div class="services-grid">
-            <article class="service-card">
-              <h3>Individual Therapy</h3>
-              <p>
-                One-to-one counselling focused on anxiety, stress, burnout, trauma,
-                depression, self-esteem, and personal growth.
-              </p>
+          <div class="model-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Intake and matching</h3>
+                <p>
+                  Keep client requests, therapist fit, packages, and next steps visible from the
+                  first contact.
+                </p>
+              </div>
             </article>
-            <article class="service-card">
-              <h3>Couples Therapy</h3>
-              <p>
-                Support for communication, conflict, trust, connection, and
-                relationship repair in a structured and compassionate setting.
-              </p>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Staff coordination</h3>
+                <p>
+                  Centralize internal tasks, notes, handoffs, reminders, and management priorities.
+                </p>
+              </div>
             </article>
-            <article class="service-card">
-              <h3>Family Support</h3>
-              <p>
-                Guidance for families navigating conflict, transitions, boundaries,
-                caregiving stress, and changing family dynamics.
-              </p>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Client-facing care</h3>
+                <p>
+                  Send clients to a dedicated therapy access brand instead of mixing software,
+                  clinic operations, and public care pages.
+                </p>
+              </div>
             </article>
-            <article class="service-card">
-              <h3>Virtual Therapy</h3>
-              <p>
-                Secure online sessions that make care more convenient and
-                accessible from anywhere in Ontario.
-              </p>
+            <article>
+              <span>04</span>
+              <div>
+                <h3>Management evidence</h3>
+                <p>
+                  Preserve the records that matter for decisions, process improvement, and future
+                  reporting.
+                </p>
+              </div>
             </article>
-          </div>
-
-          <div class="issues-panel">
-            <h3>Common Areas of Support</h3>
-            <ul class="issues-list">
-              <li>Anxiety and stress</li>
-              <li>Depression and low mood</li>
-              <li>Burnout</li>
-              <li>Trauma</li>
-              <li>Grief and loss</li>
-              <li>Relationship challenges</li>
-              <li>Life transitions</li>
-              <li>Self-esteem</li>
-              <li>Emotional regulation</li>
-              <li>Family conflict</li>
-            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="container contact-shell">
-          <div class="contact-copy">
-            <p class="section-label">Contact Us</p>
-            <h2>Take the first step toward support.</h2>
-            <p>
-              We welcome your questions and are here to help you take the next
-              step. Reach out by phone or email to learn more about our services.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="tel:+16475472323">Call Us</a>
-              <a class="button button-secondary" href="mailto:info@pneumahealth.ca">Email Us</a>
-            </div>
-          </div>
+      <section class="section metrics-band" aria-label="Pneuma Health priorities">
+        <div class="container metric-grid">
+          <article>
+            <strong>3</strong>
+            <span>Core areas: solutions, health, management</span>
+          </article>
+          <article>
+            <strong>1</strong>
+            <span>Staff app for internal operations</span>
+          </article>
+          <article>
+            <strong>24/7</strong>
+            <span>Public routing to the right destination</span>
+          </article>
+        </div>
+      </section>
 
-          <div class="contact-card">
-            <h3>Pneuma Health</h3>
-            <p>Compassionate, client-centered mental health care</p>
-            <ul class="contact-list">
-              <li>
-                <strong>Phone:</strong>
-                <a href="tel:+16475472323">(647) 547-2323</a>
-              </li>
-              <li>
-                <strong>Email:</strong>
-                <a href="mailto:info@pneumahealth.ca">info@pneumahealth.ca</a>
-              </li>
-              <li class="contact-address">
-                <strong>Address:</strong><br />
-                3230 Yonge Street #4092<br />
-                Toronto, ON M4N 3P6<br />
-                Canada
-              </li>
-              <li class="contact-hours">
-                <strong>Hours:</strong><br />
-                Monday–Friday 10am–4pm<br />
-                Saturday 10am–2pm
-              </li>
-            </ul>
+      <section class="section final-cta">
+        <div class="container cta-layout">
+          <div>
+            <p class="eyebrow">Next destination</p>
+            <h2>Need the therapy website?</h2>
+            <p>
+              The client-facing therapy content has moved to My Safe Zone. Pneuma Health remains
+              the parent platform for software and operations.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="https://mysafezone.ca">Visit My Safe Zone</a>
+            <a class="button secondary" href="/contact/">Contact Pneuma</a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p><strong>Pneuma Health</strong> builds the systems behind better care operations.</p>
+        <nav aria-label="Footer">
+          <a href="/solutions/">Solutions</a>
+          <a href="/health/">Health</a>
+          <a href="/management/">Management</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
