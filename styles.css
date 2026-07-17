@@ -371,7 +371,7 @@ h3 {
 }
 
 .area-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin-top: 2rem;
 }
 
@@ -412,6 +412,10 @@ h3 {
 
 .accent-amber {
   border-top: 3px solid var(--amber);
+}
+
+.accent-rose {
+  border-top: 3px solid var(--rose);
 }
 
 .model-list {
@@ -551,6 +555,99 @@ h3 {
   font-weight: 800;
 }
 
+.therapy-hero {
+  padding: 5rem 0 3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.therapy-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.46fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.therapy-hero h1 {
+  max-width: 780px;
+}
+
+.booking-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(242, 143, 143, 0.12), rgba(255, 255, 255, 0.04)),
+    var(--surface);
+  padding: 1.25rem;
+}
+
+.booking-panel h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+}
+
+.booking-panel p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.booking-detail {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.booking-detail span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.booking-detail a {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.therapy-image-band {
+  padding: 0;
+  overflow: hidden;
+  max-height: 420px;
+}
+
+.therapy-image-band img {
+  width: 100%;
+  height: min(42vw, 420px);
+  min-height: 260px;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.82) contrast(1.05);
+}
+
+.booking-steps {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.booking-steps li {
+  display: grid;
+  gap: 0.3rem;
+  border-left: 3px solid var(--rose);
+  padding: 0.2rem 0 0.2rem 0.9rem;
+}
+
+.booking-steps strong {
+  color: var(--soft);
+}
+
+.booking-steps span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .site-footer {
   padding: 2rem 0;
   border-top: 1px solid var(--line);
@@ -616,7 +713,8 @@ h3 {
   .section-grid,
   .split-section,
   .cta-layout,
-  .two-column {
+  .two-column,
+  .therapy-hero-layout {
     grid-template-columns: 1fr;
   }
 
