@@ -36,39 +36,110 @@
 
     <main>
       <section class="therapy-hero">
-        <div class="container therapy-hero-layout">
-          <div>
-            <p class="eyebrow">Therapy</p>
-            <h1>Book therapy with Pneuma Health.</h1>
-            <p class="page-lead">
-              Online booking is available through Jane. Forms and basic contact details are here
-              when you need them.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="https://pneumahealth.janeapp.com">Book on Jane</a>
-              <a class="button secondary" href="/therapy/forms/">Forms</a>
+        <div class="container">
+          <article class="therapy-booking-card">
+            <div class="therapy-booking-copy">
+              <p class="eyebrow">Therapy</p>
+              <h1>Book therapy online.</h1>
+              <p class="page-lead">
+                Schedule directly through Jane. Forms, coverage questions, and contact details are
+                kept close by without making the page feel crowded.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="https://pneumahealth.janeapp.com">Book now</a>
+                <a class="button secondary" href="/therapy/forms/">Forms</a>
+              </div>
+              <ul class="booking-mini-list" aria-label="Clinic details">
+                <li>3230 Yonge Street #4092, Toronto, ON M4N 3P6</li>
+                <li><a href="tel:+16475472323">(647) 547-2323</a></li>
+                <li><a href="mailto:info@pneumahealth.ca">info@pneumahealth.ca</a></li>
+              </ul>
             </div>
+
+            <figure class="therapy-booking-art">
+              <img
+                src="/assets/therapy-booking-illustration.png"
+                alt="Friendly illustration of booking a therapy appointment"
+              />
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="therapy-actions compact-section" aria-label="Therapy quick links">
+        <div class="container quick-action-grid">
+          <a
+            class="quick-action-card"
+            href="mailto:info@pneumahealth.ca?subject=Therapy%20free%20resources"
+          >
+            <span>01</span>
+            <h2>Free resources</h2>
+            <p>Request simple therapy resources and next-step guidance.</p>
+          </a>
+          <a class="quick-action-card" href="/contact/">
+            <span>02</span>
+            <h2>Contact us</h2>
+            <p>Connect with the clinic for booking or care questions.</p>
+          </a>
+          <a
+            class="quick-action-card"
+            href="mailto:info@pneumahealth.ca?subject=Therapy%20packages"
+          >
+            <span>03</span>
+            <h2>Packages</h2>
+            <p>Ask about therapy package options and availability.</p>
+          </a>
+          <a
+            class="quick-action-card"
+            href="mailto:info@pneumahealth.ca?subject=Therapist%20hiring"
+          >
+            <span>04</span>
+            <h2>Hiring</h2>
+            <p>Inquire about clinical and care-team roles.</p>
+          </a>
+          <a
+            class="quick-action-card"
+            href="mailto:info@pneumahealth.ca?subject=Volunteer%20opportunities"
+          >
+            <span>05</span>
+            <h2>Volunteer work</h2>
+            <p>Ask about volunteer opportunities with Pneuma Health.</p>
+          </a>
+          <a
+            class="quick-action-card"
+            href="mailto:info@pneumahealth.ca?subject=Student%20placements"
+          >
+            <span>06</span>
+            <h2>Students</h2>
+            <p>Contact us about placements, learning, or supervision pathways.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="insurance-band compact-section" aria-label="Insurance and coverage">
+        <div class="container insurance-layout">
+          <div class="insurance-heading">
+            <p class="card-label">Coverage</p>
+            <h2>Insurance and programs</h2>
+            <p>Coverage can vary by plan. Please confirm your benefits before booking.</p>
           </div>
 
-          <aside class="booking-panel" aria-label="Booking details">
-            <p class="card-label">Booking</p>
-            <h2>Book online.</h2>
-            <div class="booking-detail">
-              <span>Address</span>
-              <p>
-                3230 Yonge Street #4092<br />
-                Toronto, ON M4N 3P6
-              </p>
-            </div>
-            <div class="booking-detail">
-              <span>Phone</span>
-              <a href="tel:+16475472323">(647) 547-2323</a>
-            </div>
-            <div class="booking-detail">
-              <span>Email</span>
-              <a href="mailto:info@pneumahealth.ca">info@pneumahealth.ca</a>
-            </div>
-          </aside>
+          <div class="insurance-logo-grid" aria-label="Insurance providers">
+            <span class="insurance-logo">Sun Life</span>
+            <span class="insurance-logo">Manulife</span>
+            <span class="insurance-logo">Canada Life</span>
+            <span class="insurance-logo">GreenShield</span>
+            <span class="insurance-logo">Medavie Blue Cross</span>
+            <span class="insurance-logo">Desjardins Insurance</span>
+          </div>
+
+          <div class="program-pill-row" aria-label="Coverage programs">
+            <span>IFHP</span>
+            <span>WSIB</span>
+            <span>MVA</span>
+            <span>EAP</span>
+            <span>Affordable care</span>
+          </div>
         </div>
       </section>
     </main>
