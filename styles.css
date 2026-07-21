@@ -680,22 +680,6 @@ h3 {
   object-fit: contain;
 }
 
-.program-pill-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.program-pill-row span {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--muted);
-  padding: 0.45rem 0.7rem;
-  font-size: 0.86rem;
-  font-weight: 650;
-}
-
 .therapy-image-band {
   display: none;
 }
